@@ -1,10 +1,10 @@
 <div class="bg">
     <img src="assets/text.png" alt="" class="txt" *ngIf="!showValentine">
-    <div (click)="showValentine = true" *ngIf="!showValentine">
+    <div (click)="show()" *ngIf="!showValentine">
         <img src="assets/heart.png" alt="" class="heart-beat" >
     </div>
     <img src="assets/valentine.png" class="img" *ngIf="showValentine">
-    <button mat-mini-fab color="primary" aria-label="Example icon button with a plus one icon" class="back" *ngIf="showValentine" (click)="showValentine = false">
+    <button mat-mini-fab color="accent" aria-label="Example icon button with a plus one icon" class="back" *ngIf="showBack" (click)="back()">
         <mat-icon>arrow_back</mat-icon>
       </button>
 </div>
