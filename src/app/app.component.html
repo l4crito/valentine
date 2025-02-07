@@ -4,4 +4,7 @@
         <img src="assets/heart.png" alt="" class="heart-beat" >
     </div>
     <img src="assets/valentine.png" class="img" *ngIf="showValentine">
+    <button mat-mini-fab color="primary" aria-label="Example icon button with a plus one icon" class="back" *ngIf="showValentine" (click)="showValentine = false">
+        <mat-icon>arrow_back</mat-icon>
+      </button>
 </div>
