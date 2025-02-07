@@ -1,0 +1,7 @@
+<div class="bg">
+    <img src="assets/text.png" alt="" class="txt" *ngIf="!showValentine">
+    <div (click)="showValentine = true" *ngIf="!showValentine">
+        <img src="assets/heart.png" alt="" class="heart-beat" >
+    </div>
+    <img src="assets/valentine.png" class="img" *ngIf="showValentine">
+</div>
